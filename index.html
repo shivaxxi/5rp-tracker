@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downtown 5RP Tracker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Downtown 5RP Tracker</div>
+        <nav>
+            <a href="#">Главная</a>
+            <a href="#">Фильтры</a>
+            <a href="#">Избранное</a>
+            <a href="#">Настройки</a>
+        </nav>
+        <input type="text" placeholder="Поиск по адресу...">
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Дома Downtown 5RP</h1>
+            <p>Отслеживай слёты домов и успей поймать первый!</p>
+        </section>
+
+        <aside class="filters">
+            <h2>Фильтры</h2>
+            <label>Цена: <input type="range" min="0" max="1000000" id="priceRange"></label>
+            <label>Район:
+                <select id="districtSelect">
+                    <option value="all">Все</option>
+                    <option value="center">Центр</option>
+                    <option value="south">Юг</option>
+                    <option value="north">Север</option>
+                </select>
+            </label>
+            <label><input type="checkbox" id="garageOnly"> Только с гаражом</label>
+        </aside>
+
+        <section class="houses-list" id="housesList">
+        </section>
+    </main>
+
+    <footer>
+        © 2026 Downtown 5RP Tracker
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
